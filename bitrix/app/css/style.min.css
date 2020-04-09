@@ -653,6 +653,9 @@ body {
 .shop-item-1:hover .shop-item-btn {
   opacity: 1;
 }
+.shop-item-1:hover .shop-item-count{
+    opacity: 1;
+}
 .shop-item-2 {
   cursor: pointer;
   width: 172px;
@@ -684,8 +687,44 @@ body {
 .shop-item-2:hover .shop-item-btn {
   opacity: 1;
 }
+.shop-item-2:hover .shop-item-count{
+    opacity: 1;
+}
+
 .shop-item-2 img {
   margin-top: 15px;
+}
+.shop-item-count{
+  color: #222;
+  left: -5px;
+  top: 350px;
+  position: absolute;
+  width: 172px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 0 0 5px 5px;
+  opacity: 0;
+  font-size: 16px;
+  z-index: 3;
+}
+.shop-item-count::before{
+    content: '-';
+    position: absolute;
+    left: 49px;
+    font-size: 16px;
+}
+.shop-item-count::after{
+    content: '+';
+    position: absolute;
+    right: 45px;
+    font-size: 16px;
 }
 .shop-item-btn {
   color: #fff;
